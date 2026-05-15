@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AeroSentric - Systèmes Embarqués</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background:#0b1020;
+        color:white;
+        overflow-x:hidden;
+    }
+
+    header{
+        height:100vh;
+        background:
+            linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+            url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1600&auto=format&fit=crop');
+        background-size:cover;
+        background-position:center;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding:20px;
+    }
+
+    header h1{
+        font-size:5rem;
+        letter-spacing:4px;
+        color:#00e5ff;
+        text-shadow:0 0 20px rgba(0,229,255,0.6);
+    }
+
+    header p{
+        max-width:700px;
+        margin-top:20px;
+        font-size:1.2rem;
+        line-height:1.7;
+        color:#d9f8ff;
+    }
+
+    nav{
+        position:fixed;
+        top:0;
+        width:100%;
+        background:rgba(5,10,25,0.8);
+        backdrop-filter:blur(10px);
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        padding:18px;
+        z-index:999;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+        transition:0.3s;
+    }
+
+    nav a:hover{
+        color:#00e5ff;
+    }
+
+    section{
+        padding:90px 10%;
+    }
+
+    .section-title{
+        text-align:center;
+        font-size:2.8rem;
+        margin-bottom:50px;
+        color:#00e5ff;
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+        gap:30px;
+    }
+
+    .card{
+        background:#121933;
+        border-radius:20px;
+        overflow:hidden;
+        transition:0.4s;
+        border:1px solid rgba(0,229,255,0.15);
+        box-shadow:0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .card:hover{
+        transform:translateY(-10px) scale(1.02);
+        box-shadow:0 0 25px rgba(0,229,255,0.25);
+    }
+
+    .card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+    .card-content{
+        padding:20px;
+    }
+
+    .card-content h3{
+        margin-bottom:15px;
+        color:#00e5ff;
+    }
+
+    .tech{
+        background:linear-gradient(135deg,#07111f,#101f3a);
+        border-radius:25px;
+        padding:40px;
+        text-align:center;
+        margin-top:50px;
+    }
+
+    .tech p{
+        line-height:1.8;
+        color:#d0d8f0;
+        max-width:900px;
+        margin:auto;
+    }
+
+    footer{
+        background:#050914;
+        padding:30px;
+        text-align:center;
+        color:#8fa0c0;
+    }
+
+    .button{
+        display:inline-block;
+        margin-top:30px;
+        padding:15px 30px;
+        border-radius:50px;
+        background:#00e5ff;
+        color:#00131d;
+        text-decoration:none;
+        font-weight:bold;
+        transition:0.3s;
+    }
+
+    .button:hover{
+        transform:scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="#drones">Drones</a>
+    <a href="#robots">Robots</a>
+    <a href="#embarque">Systèmes embarqués</a>
+</nav>
+
+<header>
+    <h1>AeroSentric</h1>
+    <p>
+        Innovation aéronautique, robotique intelligente et technologies embarquées.
+        Découvrez un univers futuriste dédié aux drones, robots autonomes et cartes électroniques.
+    </p>
+    <a href="#drones" class="button">Explorer</a>
+</header>
+
+<section id="drones">
+    <h2 class="section-title">Drones Aériens</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Drone de Surveillance</h3>
+                <p>
+                    Technologie avancée de capture vidéo et navigation autonome pour missions intelligentes.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521405924368-64c5b84bec60?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Drone Industriel</h3>
+                <p>
+                    Conçu pour l'inspection technique et les systèmes embarqués haute précision.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="robots">
+    <h2 class="section-title">Robotique & IA</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Robot Intelligent</h3>
+                <p>
+                    Intelligence artificielle embarquée pour automatisation et assistance autonome.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Vision Robotique</h3>
+                <p>
+                    Caméras intelligentes et traitement embarqué en temps réel.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="embarque">
+    <h2 class="section-title">Systèmes Embarqués</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Carte Électronique</h3>
+                <p>
+                    Microcontrôleurs, capteurs et circuits avancés pour solutions connectées.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?q=80&w=1200&auto=format&fit=crop">
+            <div class="card-content">
+                <h3>Architecture Embarquée</h3>
+                <p>
+                    Développement hardware/software pour applications temps réel.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tech">
+        <h2 style="margin-bottom:20px;color:#00e5ff;">Technologie du Futur</h2>
+        <p>
+            AeroSentric combine l’ingénierie aéronautique, l’intelligence artificielle et
+            les systèmes électroniques embarqués afin de créer des solutions futuristes
+            performantes, autonomes et sécurisées.
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 AeroSentric — Innovation Drone & Robotique
+
+<section id="contact" style="padding:80px 10%; background:#08101f;">
+    <h2 class="section-title">Contact</h2>
+
+    <div style="
+        max-width:700px;
+        margin:auto;
+        background:#121933;
+        padding:40px;
+        border-radius:20px;
+        text-align:center;
+        border:1px solid rgba(0,229,255,0.2);
+        box-shadow:0 0 25px rgba(0,229,255,0.1);
+    ">
+        <h3 style="color:#00e5ff; margin-bottom:20px;">
+            AeroSentric Support
+        </h3>
+
+        <p style="font-size:1.1rem; color:#d0d8f0; margin-bottom:15px;">
+            Email :
+        </p>
+
+        <a href="mailto:zakaria.bougtab12@gmail.com"
+           style="
+            color:#00e5ff;
+            font-size:1.2rem;
+            text-decoration:none;
+            font-weight:bold;
+           ">
+           zakaria.bougtab12@gmail.com
+        </a>
+    </div>
+</section>
+
+<footer>
+
+</body>
+</html>
